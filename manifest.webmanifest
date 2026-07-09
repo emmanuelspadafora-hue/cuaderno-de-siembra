@@ -1,0 +1,14 @@
+{
+  "name": "Cuaderno de Siembra",
+  "short_name": "Siembra",
+  "description": "Registra tus siembras y recibe qué hacer cada día: fertilizar, regar, cosechar.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f3ec",
+  "theme_color": "#2e7d32",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

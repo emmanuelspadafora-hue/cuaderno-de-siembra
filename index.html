@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cuaderno de Siembra</title>
+  <meta name="theme-color" content="#2e7d32">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Siembra">
+  <link rel="stylesheet" href="./style.css?v=2">
+</head>
+<body>
+  <div class="topbar" id="topbar">
+    <button class="back" id="back">←</button>
+    <h1>🌱 Cuaderno de Siembra</h1>
+    <a class="manual-link" href="./curso.html" title="Manual del cultivo">📖 Manual</a>
+  </div>
+
+  <main id="app"></main>
+
+  <button class="fab" id="fab">＋ Nueva siembra</button>
+
+  <!-- Formulario nueva siembra -->
+  <div class="overlay" id="overlay">
+    <div class="sheet">
+      <h2>Nueva siembra</h2>
+      <div class="field">
+        <label>Cultivo</label>
+        <select id="f-cultivo"></select>
+      </div>
+      <div class="field">
+        <label>Variedad (opcional)</label>
+        <input id="f-variedad" type="text" placeholder="Ej: Centenario, Ejido 98…">
+      </div>
+      <div class="field">
+        <label>Fecha de siembra</label>
+        <input id="f-fecha" type="date">
+      </div>
+      <div class="field">
+        <label>¿Cuántas plantas (golpes) sembraste?</label>
+        <input id="f-plantas" type="number" inputmode="numeric" min="1" placeholder="Ej: 20">
+        <div class="hint">Sirve para calcular cuánto fertilizante te toca en cada aviso.</div>
+      </div>
+      <div class="field">
+        <label>Notas (opcional)</label>
+        <textarea id="f-notas" placeholder="Lote, riego, observaciones…"></textarea>
+      </div>
+      <div class="actions">
+        <button class="btn ghost" id="f-cancelar">Cancelar</button>
+        <button class="btn primary" id="f-guardar">Guardar siembra</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./crops.js?v=2"></script>
+  <script src="./app.js?v=2"></script>
+</body>
+</html>
