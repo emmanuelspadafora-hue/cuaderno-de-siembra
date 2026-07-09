@@ -1,0 +1,15 @@
+# Sitio estático: sin build, se publica la carpeta tal cual.
+[build]
+  publish = "."
+  command = ""
+
+# El service worker y el manifest no deben cachearse de forma agresiva.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "no-cache"
