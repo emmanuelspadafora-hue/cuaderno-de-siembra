@@ -1,6 +1,9 @@
-// Service worker — cachea la app para que funcione sin internet (en el campo).
-// Sube el número de versión al cambiar archivos para forzar actualización.
-const CACHE = 'cds-v3';
+// Service worker — permite usar la app sin internet (en el campo).
+// Estrategia:
+//  · Páginas (index/curso) y el manual .md → RED PRIMERO (siempre lo último; si no hay red, usa caché).
+//  · Archivos estáticos (js/css/imágenes) → CACHÉ PRIMERO (rápido).
+// Sube CACHE al cambiar archivos para forzar actualización.
+const CACHE = 'cds-v4';
 const ASSETS = [
   './',
   './index.html',
@@ -28,8 +31,22 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
-  e.respondWith(
-    caches.match(e.request).then(hit => hit || fetch(e.request).catch(() => caches.match('./index.html')))
-  );
+  const req = e.request;
+  if (req.method !== 'GET') return;
+
+  let path = '';
+  try { path = new URL(req.url).pathname; } catch (_) {}
+  const esDocumento = req.mode === 'navigate' || req.destination === 'document' || path.endsWith('.md');
+
+  if (esDocumento) {
+    // Red primero: trae la versión fresca; si no hay internet, cae a la caché.
+    e.respondWith(
+      fetch(req)
+        .then(r => { const copia = r.clone(); caches.open(CACHE).then(c => c.put(req, copia)); return r; })
+        .catch(() => caches.match(req).then(h => h || caches.match('./curso.html') || caches.match('./index.html')))
+    );
+  } else {
+    // Caché primero para estáticos.
+    e.respondWith(caches.match(req).then(h => h || fetch(req)));
+  }
 });

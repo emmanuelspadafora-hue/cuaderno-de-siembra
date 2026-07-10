@@ -54,11 +54,21 @@
   <script src="./glosario.js?v=3"></script>
   <script src="./gloss.js?v=3"></script>
   <script>
+    const el = document.getElementById('doc');
+    function fail(msg) {
+      el.innerHTML = '<div class="loading">No se pudo abrir el manual.<br><br>' +
+        '<b>Detalle:</b> ' + msg + '<br><br>' +
+        '<a href="./index.html" style="color:#1b5e20">← Volver al cuaderno</a></div>';
+    }
+    // Cualquier error de JS se muestra en pantalla (en vez de quedar en blanco)
+    window.addEventListener('error', e => fail((e.message || 'error') + (e.filename ? ' — ' + e.filename : '')));
+    window.addEventListener('unhandledrejection', e => fail('promesa: ' + ((e.reason && e.reason.message) || e.reason || '')));
+
     (async () => {
-      const el = document.getElementById('doc');
       try {
-        const res = await fetch('./docs/curso-zapallo.md');
-        if (!res.ok) throw new Error(res.status);
+        if (typeof marked === 'undefined' || !marked.parse) throw new Error('el renderizador (marked.min.js) no cargó');
+        const res = await fetch('./docs/curso-zapallo.md?v=3', { cache: 'no-cache' });
+        if (!res.ok) throw new Error('el manual respondió ' + res.status);
         let md = await res.text();
         marked.setOptions({ gfm: true, breaks: false });
         el.innerHTML = marked.parse(md);
@@ -83,10 +93,9 @@
         }
 
         // Palabras tocables: subraya los términos del glosario y muestra su explicación al tocar
-        if (window.Gloss) Gloss.glossify(el);
+        try { if (window.Gloss) Gloss.glossify(el); } catch (_) { /* el glosario no debe romper la lectura */ }
       } catch (e) {
-        el.innerHTML = '<div class="loading">No se pudo cargar el manual.<br>' +
-          'Ábrelo desde un servidor (no con file://). Detalle: ' + e.message + '</div>';
+        fail(e.message);
       }
     })();
 
