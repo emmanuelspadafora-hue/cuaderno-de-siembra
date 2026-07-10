@@ -33,6 +33,8 @@ El zapallo de guarda es un cultivo **rastrero, de ciclo largo (~75–80 días a 
 
 > 💡 **La frase que resume todo:** _"Agua y calor para crecer; sequedad y sol para madurar y guardar."_
 
+> 🎯 **¿Buscas máximos kilos por área (no un fruto gigante)?** Ve directo al **Módulo 13** — plan de rendimiento con el híbrido Arjuna F1/Max para trópico húmedo.
+
 ---
 
 # MÓDULO 1 — Conoce la planta y elige la variedad
@@ -337,6 +339,36 @@ Semilla sana · siembra a fin de estación seca · rotación · **riego por gote
 
 ---
 
+# MÓDULO 13 — 🎯 Máximo rendimiento (kg/ha) en trópico húmedo — 🔵
+
+**🎯 Lo esencial:** en Panamá, para sacar **más kilos por área** el plan ganador es: **híbrido resistente (Arjuna F1 / Arjuna Max) + goteo con fertirriego + muchos frutos bien cuajados + follaje sano.** Y algo que va al revés del resto del manual: **NO ralees los frutos.**
+
+> ⚖️ Recordá: "grande" y "rápido" pelean un poco. Este módulo va por **máximos kilos totales**, no por un fruto gigante. Para eso querés **varios frutos por planta bien llenos**, no pocos enormes.
+
+### 🔵 El híbrido: Arjuna F1 (y Arjuna Max) — por qué encaja en Panamá
+- **Especie:** zapallo/ayote **Cucurbita moschata** → tolera mejor el **calor, la humedad y varios virus/plagas** del trópico que el criollo (Cucurbita maxima).
+- **Planta:** rastrera, muy vigorosa, buena cobertura y **buen cuaje**.
+- **Carga:** **3 a 5 frutos por planta**, de ~3.5 kg cada uno; pulpa firme, naranja, con buena poscosecha.
+- **Ciclo:** cosecha a los **90–110 días** desde el trasplante (la semilla germina en 7–10 días).
+- **Rendimiento reportado:** **23 a 46 t/ha** — muy alto.
+- **Se adapta de 0 a 1.800 msnm**, en caribe seco y húmedo → buen ajuste para Panamá.
+- **Arjuna Max:** versión mejorada de la misma casa (East-West Seed), del mismo tipo con más vigor. Confirmá la ficha exacta con tu distribuidor local.
+
+### 🔵 El plan de rendimiento (en orden de impacto)
+1. **Goteo + fertirriego = la palanca #1.** Hasta **~60 t/ha** con riego y fertirriego vs. ~15 t/ha sin riego. Si hacés una sola inversión, es esta.
+2. **Cuaje al máximo = más frutos = más kilos.** Poné **colmenas (2–3/ha)**, y evitá el estrés de agua o calor en floración (las flores hembra se caen con estrés). **No ralees los frutos:** dejá que la planta cargue todo lo que pueda llenar.
+3. **Follaje sano = kilos.** Cada hoja perdida es rendimiento perdido. Goteo (no mojar la hoja), aireación (densidad correcta) y control temprano de mildiú/oídio y de los insectos que traen virus.
+4. **Potasio fuerte en el llenado; nitrógeno justo.** El potasio llena el fruto (dalo seguido por fertirriego). No te excedas de nitrógeno: da mucha hoja, poca fruta y más plagas.
+5. **Menos pérdidas = kilos "gratis".** En suelo húmedo, muchos frutos se pudren por la cara que toca el barro → **acolchado o cama de paja** debajo.
+
+### 🔵 Densidad para Arjuna (más denso que el zapallo de guarda grande)
+- **Entre plantas: 0.7–1.0 m · Entre surcos: 2–3 m** → aprox. **3.000–6.000 plantas/ha** (el criollo de guarda va a solo 1.400–2.000). Seguí siempre la recomendación del sobre/distribuidor.
+- Más plantas bien nutridas × 3–5 frutos cada una = el salto de rendimiento.
+
+> 🧠 **Resumen de bolsillo:** híbrido moschata resistente (Arjuna F1/Max) + goteo/fertirriego + polinización a tope + follaje sano + **no ralear**. Densidad ~3.000–6.000 pl/ha. Meta realista **23–46 t/ha**.
+
+---
+
 # 📅 CALENDARIO DEL CULTIVO (línea de tiempo)
 
 ```
@@ -419,3 +451,7 @@ Post-cosecha CURADO 8–10 días a 27–29 °C → almacén 10–15 °C, 50–75
 - 🔵 [Guía de cucurbitáceas — FCAyF UNLP (2016/2022)](https://aulavirtual.agro.unlp.edu.ar/pluginfile.php/116611/mod_resource/content/1/Guia%20de%20cucurbitaceas%202022.pdf)
 - 🔵 [Riego por goteo para producción de verduras — Rivulis](https://es.rivulis.com/riego-por-goteo-para-una-mejor-produccion-de-verduras-en-campo-abierto/)
 - 🔵 [Calabaza — Riego (UPRM)](https://www.uprm.edu/eea/wp-content/uploads/sites/177/2016/04/7.-CALABAZA-RIEGO.pdf)
+- 🔵 [Ahuyama híbrida Arjuna F1 — Agroactivo (ficha)](https://agroactivocol.com/producto/material-vegetal/semillas/hortalizas/ahuyama-hibrida-arjuna-f1/)
+- 🔵 [Ficha técnica Ahuyama Arjuna — Impulsemillas (PDF)](https://www.impulsemillas.com/wp-content/uploads/2022/04/Ficha-Tecnica-Ahuyama-Arjuna-25-02-2022-1.pdf)
+- 🔵 [Zapallo Arjuna F1 — Grupo Agrosoluciones, Panamá](https://www.agropty.com/url/shop-single?id=cd4114164912bb0e6077c210c0ba64ff&index=1)
+- 🔵 [Calabaza Arjuna F1 — East-West Seed LATAM](https://www.facebook.com/EWSlatam/posts/824503771219794/)

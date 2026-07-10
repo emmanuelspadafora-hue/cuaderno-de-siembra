@@ -4,16 +4,16 @@
 //  · Archivos estáticos (js/css/imágenes) → CACHÉ PRIMERO (rápido).
 // El manual ya viene incrustado en curso.html (no se descarga aparte).
 // Sube CACHE al cambiar archivos para forzar actualización.
-const CACHE = 'cds-v6';
+const CACHE = 'cds-v7';
 const ASSETS = [
   './',
   './index.html',
   './curso.html',
-  './style.css?v=5',
-  './glosario.js?v=5',
-  './gloss.js?v=5',
-  './crops.js?v=5',
-  './app.js?v=5',
+  './style.css?v=6',
+  './glosario.js?v=6',
+  './gloss.js?v=6',
+  './crops.js?v=6',
+  './app.js?v=6',
   './vendor/marked.min.js',
   './manifest.webmanifest',
   './icon.svg',
