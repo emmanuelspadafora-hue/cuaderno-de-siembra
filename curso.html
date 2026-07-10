@@ -51,6 +51,8 @@
   <div class="doc" id="doc"><div class="loading">Cargando manual…</div></div>
 
   <script src="./vendor/marked.min.js"></script>
+  <script src="./glosario.js?v=3"></script>
+  <script src="./gloss.js?v=3"></script>
   <script>
     (async () => {
       const el = document.getElementById('doc');
@@ -79,6 +81,9 @@
           });
           el.insertBefore(toc, h1s[0]);
         }
+
+        // Palabras tocables: subraya los términos del glosario y muestra su explicación al tocar
+        if (window.Gloss) Gloss.glossify(el);
       } catch (e) {
         el.innerHTML = '<div class="loading">No se pudo cargar el manual.<br>' +
           'Ábrelo desde un servidor (no con file://). Detalle: ' + e.message + '</div>';

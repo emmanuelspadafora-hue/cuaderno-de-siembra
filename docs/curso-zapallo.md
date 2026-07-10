@@ -6,6 +6,8 @@
 > 🟢 = contenido de la guía original · 🔵 = añadido moderno / de otros cursos (no estaba en la guía).
 > El zapallo de la guía es **_Cucurbita moschata / maxima_** de guarda (frutos de 10–20 kg, tipo "Centenario/Ejido"). Los consejos marcados **[Tipo]** ajustan según la clase de zapallo que cultives.
 
+> 📱 **En la app, las palabras <u>subrayadas</u> se pueden tocar** para ver, en lenguaje simple, qué significan (nitrógeno, curado, cuaje, ppm…). Y al final tienes un **Glosario express** con todo junto.
+
 ---
 
 ## 🧭 Cómo usar este curso

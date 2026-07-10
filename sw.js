@@ -1,13 +1,15 @@
 // Service worker — cachea la app para que funcione sin internet (en el campo).
 // Sube el número de versión al cambiar archivos para forzar actualización.
-const CACHE = 'cds-v2';
+const CACHE = 'cds-v3';
 const ASSETS = [
   './',
   './index.html',
   './curso.html',
-  './style.css?v=2',
-  './crops.js?v=2',
-  './app.js?v=2',
+  './style.css?v=3',
+  './glosario.js?v=3',
+  './gloss.js?v=3',
+  './crops.js?v=3',
+  './app.js?v=3',
   './vendor/marked.min.js',
   './docs/curso-zapallo.md',
   './manifest.webmanifest',

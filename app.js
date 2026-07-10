@@ -63,6 +63,7 @@ function render(){
   if (vista.modo === 'detalle'){ bar.classList.add('detail'); } else { bar.classList.remove('detail'); }
   $('#app').innerHTML = vista.modo === 'detalle' ? renderDetalle() : renderHome();
   cablear();
+  if (window.Gloss) Gloss.glossify($('#app'));   // subraya términos tocables del glosario
 }
 
 function cuandoTexto(t){
