@@ -62,8 +62,8 @@ const html = `<!DOCTYPE html>
 ${cuerpo}
   </div>
 
-  <script src="./glosario.js?v=6"></script>
-  <script src="./gloss.js?v=6"></script>
+  <script src="./glosario.js?v=7"></script>
+  <script src="./gloss.js?v=7"></script>
   <script>
     // El manual ya está escrito arriba. Esto solo lo mejora; si algo falla, la lectura no se rompe.
     (function () {
