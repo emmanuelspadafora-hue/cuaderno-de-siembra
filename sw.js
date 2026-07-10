@@ -1,20 +1,20 @@
 // Service worker — permite usar la app sin internet (en el campo).
 // Estrategia:
-//  · Páginas (index/curso) y el manual .md → RED PRIMERO (siempre lo último; si no hay red, usa caché).
+//  · Páginas (index/curso) → RED PRIMERO (siempre lo último; si no hay red, usa caché).
 //  · Archivos estáticos (js/css/imágenes) → CACHÉ PRIMERO (rápido).
+// El manual ya viene incrustado en curso.html (no se descarga aparte).
 // Sube CACHE al cambiar archivos para forzar actualización.
-const CACHE = 'cds-v4';
+const CACHE = 'cds-v5';
 const ASSETS = [
   './',
   './index.html',
   './curso.html',
-  './style.css?v=3',
-  './glosario.js?v=3',
-  './gloss.js?v=3',
-  './crops.js?v=3',
-  './app.js?v=3',
+  './style.css?v=4',
+  './glosario.js?v=4',
+  './gloss.js?v=4',
+  './crops.js?v=4',
+  './app.js?v=4',
   './vendor/marked.min.js',
-  './docs/curso-zapallo.md',
   './manifest.webmanifest',
   './icon.svg',
 ];
@@ -34,16 +34,14 @@ self.addEventListener('fetch', e => {
   const req = e.request;
   if (req.method !== 'GET') return;
 
-  let path = '';
-  try { path = new URL(req.url).pathname; } catch (_) {}
-  const esDocumento = req.mode === 'navigate' || req.destination === 'document' || path.endsWith('.md');
+  const esPagina = req.mode === 'navigate' || req.destination === 'document';
 
-  if (esDocumento) {
+  if (esPagina) {
     // Red primero: trae la versión fresca; si no hay internet, cae a la caché.
     e.respondWith(
       fetch(req)
         .then(r => { const copia = r.clone(); caches.open(CACHE).then(c => c.put(req, copia)); return r; })
-        .catch(() => caches.match(req).then(h => h || caches.match('./curso.html') || caches.match('./index.html')))
+        .catch(() => caches.match(req).then(h => h || caches.match('./index.html')))
     );
   } else {
     // Caché primero para estáticos.
