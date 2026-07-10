@@ -3,7 +3,10 @@
 // subrayada y, al tocarla, muestra su explicación. (Ver gloss.js)
 // Cada entrada: keys = formas en que puede aparecer el texto · t = título · d = explicación llana.
 
-const GLOSARIO = [
+// OJO: se asigna a window.GLOSARIO (NO `const`). Un `const` a nivel de script
+// NO queda en window, y gloss.js lo lee como window.GLOSARIO → si fuera const,
+// gloss.js recibiría lista vacía y armaría un regex que cuelga la página.
+window.GLOSARIO = [
   { keys:['nitrógeno','nitrogeno'], t:'Nitrógeno (N)',
     d:'Es el "alimento del crecimiento verde": hace que la planta saque hojas y ramas. Si le pones de más, tendrás mucha hoja y pocos frutos.' },
   { keys:['fósforo','fosforo'], t:'Fósforo (P)',

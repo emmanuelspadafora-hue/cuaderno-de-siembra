@@ -62,8 +62,8 @@ const html = `<!DOCTYPE html>
 ${cuerpo}
   </div>
 
-  <script src="./glosario.js?v=4"></script>
-  <script src="./gloss.js?v=4"></script>
+  <script src="./glosario.js?v=5"></script>
+  <script src="./gloss.js?v=5"></script>
   <script>
     // El manual ya está escrito arriba. Esto solo lo mejora; si algo falla, la lectura no se rompe.
     (function () {
@@ -87,7 +87,7 @@ ${cuerpo}
           el.insertBefore(toc, h1s[0]);
         }
         // Palabras tocables del glosario
-        if (window.Gloss) Gloss.glossify(el);
+        if (window.Gloss) window.Gloss.glossify(el);
       } catch (e) { /* mejoras opcionales: nunca deben impedir leer el manual */ }
     })();
     if ('serviceWorker' in navigator) { navigator.serviceWorker.register('./sw.js').catch(function () {}); }

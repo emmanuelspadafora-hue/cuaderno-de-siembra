@@ -4,13 +4,17 @@
 // igual en la app (index.html) y en el manual (curso.html).
 (function () {
   const WORD = /[0-9A-Za-zÀ-ÿ]/;          // ¿es letra/número? (para no cortar palabras)
-  let MAP = null, RX = null, POP = null, BACK = null;
+  let MAP = null, RX = null, POP = null, BACK = null, BUILT = false;
 
   function build() {
+    BUILT = true;
     MAP = {};
     const keys = [];
-    (window.GLOSARIO || []).forEach(e => e.keys.forEach(k => { MAP[k.toLowerCase()] = e; keys.push(k); }));
+    const datos = (typeof GLOSARIO !== 'undefined' && GLOSARIO) || window.GLOSARIO || [];
+    datos.forEach(e => e.keys.forEach(k => { MAP[k.toLowerCase()] = e; keys.push(k); }));
     keys.sort((a, b) => b.length - a.length);                 // primero los términos más largos
+    // Si no hay términos, RX queda null y glossify no hace nada (evita un regex vacío que colgaría).
+    if (!keys.length) { RX = null; return; }
     const esc = keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
     RX = new RegExp('(' + esc.join('|') + ')', 'gi');
   }
@@ -52,6 +56,7 @@
     const text = node.nodeValue; RX.lastIndex = 0;
     let m, last = 0, frag = null;
     while ((m = RX.exec(text))) {
+      if (m[0].length === 0) { RX.lastIndex++; continue; }   // seguro anti-bucle: nunca avanzar 0
       const i = m.index, j = i + m[0].length;
       const before = i > 0 ? text[i - 1] : '';
       const after = j < text.length ? text[j] : '';
@@ -75,7 +80,8 @@
 
   function glossify(root) {
     if (!root) return;
-    if (!RX) { build(); injectStyles(); ensurePopover(); }
+    if (!BUILT) { build(); injectStyles(); ensurePopover(); }
+    if (!RX) return;                       // sin términos → no hay nada que enlazar
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode(n) {
         if (!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
