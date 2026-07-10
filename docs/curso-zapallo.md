@@ -369,6 +369,39 @@ Semilla sana · siembra a fin de estación seca · rotación · **riego por gote
 
 ---
 
+# MÓDULO 14 — 🌍 Técnicas de otros países (para producción comercial, ~20 ha) — 🔵
+
+**🎯 Lo esencial:** hay técnicas usadas en otros países que **no salen en la guía original** y que, a escala grande y en clima húmedo, te ayudan a **perder menos cosecha** (por virus y hongos) y a **arrancar más parejo**. Aquí van explicadas simple, y pensadas para un campo grande, no para un huerto.
+
+> 📱 En este módulo, **toca las palabras subrayadas**: te explican qué es y, en muchas, se abre **la investigación (la literatura) de dónde viene la técnica**.
+
+> ⚠️ Nota de escala: en **20 hectáreas no se cubre el campo entero** con red ni se hace todo a mano. Por eso abajo aclaramos **qué sí escala** y **qué se hace solo en el semillero** (el lugar chico donde nacen las plantitas).
+
+### 🔵 1. Plantines sanos: semillero con malla antiinsectos + bio-priming
+El **plantín** (la plantita recién nacida) es cuando el **virus** hace más daño. Como el Arjuna se hace por **trasplante** (nace en bandejas y luego se pasa al campo), podés proteger solo el **semillero**, que es un área chica:
+- **Malla antiinsectos** sobre el semillero: una red muy fina que no deja entrar la **mosca blanca** (el insecto que trae el virus). Los plantines crecen limpios y llegan sanos al campo. Cubrir las 20 ha no es práctico; **el semillero sí**.
+- **Bio-priming** de la semilla: darle a la semilla, antes de sembrar, un remojo con un microbio bueno (**Trichoderma**). Nace **más rápida, más pareja y ya blindada** contra hongos del suelo. Se trata el saco de semilla, así que **escala sin problema**.
+
+### 🔵 2. Contra el virus en las 20 ha (lo que SÍ escala en campo)
+El **virus** no tiene cura; todo es **evitar que llegue**. En campo grande:
+- **Acolchado reflectante** (plateado): el brillo del plástico espanta a la mosca blanca en todo el campo → menos virus. Va con el goteo, así que escala bien.
+- **Roguing:** recorrer y **sacar las primeras plantas enfermas** del lote, para que no contagien a las sanas.
+- **Cultivo trampa** en los bordes: una hilera de una planta que le gusta más a la plaga, para que se quede ahí y no entre a tu cultivo.
+- Quitar las **malezas hospederas** alrededor (donde el virus y la plaga se esconden), y usar veneno **por umbral y rotando**, no por calendario.
+
+### 🔵 3. Contra los hongos del suelo y para más vigor
+- **Trichoderma**, **Bacillus subtilis** y **micorrizas**: microbios buenos que se aplican a la semilla o al suelo (por el goteo). Protegen del "mal del almácigo" (hongos que ahogan la plantita) y ayudan a la raíz a chupar más fósforo. Baratos y encajan perfecto en clima húmedo.
+- **Injerto** sobre un **patrón** resistente: además de aguantar hongos de suelo, ciertos patrones toleran **suelo encharcado por lluvia** — útil en trópico lluvioso (ojo: puede atrasar un poco la floración).
+
+### 🔵 4. Apoyos que suman
+- **Silicio** (silicato de potasio): fortalece la planta y baja el oídio (el polvo blanco de la hoja). Ayuda, aunque en kilos su efecto es variable.
+- **Tensiómetro** (riego por sensores): un aparato que mide la humedad del suelo y te dice cuándo regar exacto → sin estrés y sin frutos rajados.
+- **Caolín**: una arcilla blanca que se rocía y protege del golpe de sol y espanta insectos.
+
+> 🧠 **Resumen de bolsillo (para 20 ha):** protegé el **semillero** con malla + bio-priming; en campo, **acolchado reflectante + roguing + bordes trampa** contra el virus; **Trichoderma/micorrizas** al suelo contra hongos. Eso es lo que más kilos te salva.
+
+---
+
 # 📅 CALENDARIO DEL CULTIVO (línea de tiempo)
 
 ```
@@ -455,3 +488,11 @@ Post-cosecha CURADO 8–10 días a 27–29 °C → almacén 10–15 °C, 50–75
 - 🔵 [Ficha técnica Ahuyama Arjuna — Impulsemillas (PDF)](https://www.impulsemillas.com/wp-content/uploads/2022/04/Ficha-Tecnica-Ahuyama-Arjuna-25-02-2022-1.pdf)
 - 🔵 [Zapallo Arjuna F1 — Grupo Agrosoluciones, Panamá](https://www.agropty.com/url/shop-single?id=cd4114164912bb0e6077c210c0ba64ff&index=1)
 - 🔵 [Calabaza Arjuna F1 — East-West Seed LATAM](https://www.facebook.com/EWSlatam/posts/824503771219794/)
+- 🔵 [Malla y acolchado reflectante contra mosca blanca en zapallo — PMC (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10672264/)
+- 🔵 [Virus por mosca blanca en cucurbitáceas (manejo cultural, roguing) — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10675411/)
+- 🔵 [Cultivo trampa "push-pull" en cucurbitáceas — U. de Florida / USDA-NIFA](https://portal.nifa.usda.gov/web/crisprojectpages/1030960-using-semiochemicals-trap-crop-and-visual-cues-in-a-push-pull-strategy-to-control-whitefly-in-cucurbits-and-tomatoes.html)
+- 🔵 [Trichoderma contra hongos/oomicetos de suelo — PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9487998/)
+- 🔵 [Bacillus subtilis QST 713 contra mal del almácigo en zapallo — SciELO](https://www.scielo.org.mx/scielo.php?pid=S0185-33092021000200302&script=sci_arttext&tlng=en)
+- 🔵 [Bio-priming en zapallo (Cucurbita maxima) — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11397125/)
+- 🔵 [Silicio contra oídio en zapallo — MDPI Sustainability](https://www.mdpi.com/2071-1050/8/4/293)
+- 🔵 [Injerto y patrones en cucurbitáceas — Bayer Vegetables](https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/watermelon-grafting-and-rootstocks.html)

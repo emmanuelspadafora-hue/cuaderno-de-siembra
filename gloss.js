@@ -31,7 +31,9 @@
       .gloss-pop.open{transform:translate(-50%,0)}
       .gloss-pop .gp-t{font-weight:800;font-size:18px;color:#1b5e20;margin-bottom:8px}
       .gloss-pop .gp-d{font-size:15.5px;line-height:1.55;color:#233029}
-      .gloss-pop .gp-x{margin-top:18px;width:100%;padding:13px;border:none;border-radius:12px;
+      .gloss-pop .gp-src{display:none;margin-top:14px;color:#1b5e20;font-size:14px;font-weight:700;
+        text-decoration:underline;word-break:break-word}
+      .gloss-pop .gp-x{margin-top:16px;width:100%;padding:13px;border:none;border-radius:12px;
         background:#2e7d32;color:#fff;font-size:16px;font-weight:700;cursor:pointer}
     `;
     const s = document.createElement('style'); s.textContent = css; document.head.appendChild(s);
@@ -40,7 +42,9 @@
   function ensurePopover() {
     BACK = document.createElement('div'); BACK.className = 'gloss-back';
     POP = document.createElement('div'); POP.className = 'gloss-pop';
-    POP.innerHTML = '<div class="gp-t"></div><div class="gp-d"></div><button class="gp-x">Entendido</button>';
+    POP.innerHTML = '<div class="gp-t"></div><div class="gp-d"></div>' +
+      '<a class="gp-src" target="_blank" rel="noopener noreferrer"></a>' +
+      '<button class="gp-x">Entendido</button>';
     document.body.appendChild(BACK); document.body.appendChild(POP);
     const hide = () => { BACK.classList.remove('open'); POP.classList.remove('open'); };
     BACK.onclick = hide; POP.querySelector('.gp-x').onclick = hide;
@@ -49,6 +53,14 @@
   function show(entry) {
     POP.querySelector('.gp-t').textContent = entry.t;
     POP.querySelector('.gp-d').textContent = entry.d;
+    const s = POP.querySelector('.gp-src');
+    if (entry.f && entry.f.url) {
+      s.href = entry.f.url;
+      s.textContent = '📄 De dónde viene esto: ' + (entry.f.label || 'ver fuente');
+      s.style.display = 'block';
+    } else {
+      s.style.display = 'none';
+    }
     BACK.classList.add('open'); POP.classList.add('open');
   }
 
